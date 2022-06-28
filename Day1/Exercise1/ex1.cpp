@@ -39,10 +39,10 @@ int main() {
 	int q = 4;
 	double start = -10.0;
 
-	for (int i = 0; i <= 20; ++i) {
+	for (int i = 0; i <= 2000; ++i) {
 		printf("%.2lf %.5lf %.5lf %.5lf %.5lf\n", start, exp(start), taylor_approx(start, 5),
 			   taylor_approx(start, 7), pade_approx(start, p, q));
-		start += 1;
+		start += 0.01;
 	}
 
 	return 0;

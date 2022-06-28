@@ -1,3 +1,3 @@
 # Interpolation and Approximation of Functions
-## Prof. Nicolas Seriani
+## Prof. Nicola Seriani
 ## Student: Debarshi Banerjee
