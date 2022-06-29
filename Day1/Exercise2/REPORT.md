@@ -1,5 +1,5 @@
 ### nmax vs error and execution time:
-- As we increase nmax from 100 to 10000 (100, 500, 1000, 2000, 5000, 10000) we see a slight increase in execution time.
+- As we increase nmax from 100 to 10000 (100, 500, 1000, 2000, 5000, 10000) we see no appreciable difference in execution time.
 - Correspondingly, we also see the error reduce as we increase nmax.
 - From the graph of error vs nmax (in logscale along error axis), we see the smoothening of the curve, and we can see that reaching very high levels of accuracy (say, 10^-10) would take a very large amount of nmax.
 - Going from nmax = 2'000 to 10'000 changes accuracy only by 1 order of magnitude.
