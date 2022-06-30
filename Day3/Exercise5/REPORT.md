@@ -1,5 +1,6 @@
 # Taylor Approximation:
 
+- The code performs the Taylor Approximation for order = 7
 - In this case, 32 bit and 64 bit versions perform practically the same.
 - Once again, like in the previous day's exercise, the ratio of times are reported: t\_r = (t\_exp/exp)
 - This is to account for significant fluctuation in laptop's CPU performance due to boosting.
@@ -22,6 +23,7 @@
 
 # Pade Approximation:
 
+- The default code performs the Pade Approximation for a 4th order approximant.
 - In this case, the 32 bit and 64 bit versions take approximately the same total execution time. The caveats mentioned earlier about measuring the absolute time still apply, of course.
 - The 32 bit version shows slightly increased accuracy over the 64 bit implementations.
 - We once again compare the ratio of time to the time that the default 'exp()' function takes, not the other custom functions.
@@ -46,3 +48,4 @@
 - The most accurate method to calculate exp(x) is the Pade approximation that we implement.
 - It is hard to make a comment on the fastest method due to the variability arising from the usage of 32 and 64 bit versions.
 - However, if we simply look at the improvement with respect to the native exponential function, the Taylor approximation appears faster on average, although for a range [-0.5:+0.5] the Pade approximation is almost equally competitive.
+
