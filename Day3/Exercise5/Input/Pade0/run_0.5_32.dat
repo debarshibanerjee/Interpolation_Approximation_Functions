@@ -14,9 +14,9 @@ TESTLIBS=  -lrt -lm
 
 -------------------------
 testing exponentiation functions
-time/set for 10000 x-values :  0.04643us
-<x>: 0.000729412    <x**2> - <x>**2: 0.0417829898054384
-time for                 exp():   0.1314us  numreps 1
-time for               t_exp():   0.0171us  avgerr  2.22336e-09
-time for             pad_exp():   0.0121us  avgerr  1.3745e-12
-time for          custom_exp():   0.0528us  avgerr  2.16657e-17
+time/set for 10000 x-values :  0.09775us
+<x>: 0.0145882    <x**2> - <x>**2: 16.7131959221754
+time for                 exp():   0.1291us  numreps 100
+time for               t_exp():   0.0114us  avgerr  65878.4
+time for             pad_exp():   0.0101us  avgerr  2.22292
+time for          custom_exp():   0.0862us  avgerr  6.51399e-17
