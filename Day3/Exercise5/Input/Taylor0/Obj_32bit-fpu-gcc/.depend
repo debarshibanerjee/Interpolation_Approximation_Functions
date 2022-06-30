@@ -1,0 +1,3 @@
+exp.o: ../src/exp.c ../include/fastermath.h ../include/fm_internal.h
+tester.o: ../src/tester.c ../include/fastermath.h config.c
+config.o: config.c

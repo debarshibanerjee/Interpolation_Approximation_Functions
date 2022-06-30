@@ -1,0 +1,22 @@
+
+=============================
+fastermath test and benchmark
+=============================
+ARCH=      64bit-fpu-gcc-modern
+CPPFLAGS=  
+DEFS=      -I../include -I. -D_FM_INTERNAL -D_FM_ALIGN=16
+ARCHFLAGS= -march=native -mfpmath=sse -mpc64 -g
+GENFLAGS=  -falign-functions=16 -fPIC -fno-builtin
+OPTFLAGS=  -O3 -ffast-math -fexpensive-optimizations
+WARNFLAGS= -Wall -W
+LDLIBS=    
+TESTLIBS=  -lrt -lm
+
+-------------------------
+testing exponentiation functions
+time/set for 10000 x-values :  0.09828us
+<x>: 0.0145882    <x**2> - <x>**2: 16.7131959221754
+time for                 exp():   0.0633us  numreps 1
+time for               t_exp():   0.0191us  avgerr  65878.4
+time for             pad_exp():   0.0196us  avgerr  2.22292
+time for          custom_exp():   0.1346us  avgerr  1.41668e-16
